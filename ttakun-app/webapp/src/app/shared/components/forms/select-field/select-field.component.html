@@ -1,0 +1,23 @@
+<div [ngClass]="class"
+     [formGroup]="form"
+     *ngIf="form.get(controlName) as control"
+     [class.error]="control.touched && control.errors"
+     [class.field--required]="hasRequiredField(control)"
+>
+  <label [for]="id"
+         *ngIf="!hideLabel"
+  >
+    {{ key | translate }}
+    <span class="required" *ngIf="hasRequiredField(control)"></span>
+  </label>
+  <div class="select">
+    <select [id]="id" [formControlName]="controlName">
+      <option *ngIf="empty" value=""></option>
+      <option *ngFor="let option of options" [value]="option.value" [disabled]="option.disabled">{{ option.label }}</option>
+    </select>
+  </div>
+  <div class="box-error" *ngIf="!hideErrors && control.touched">
+    <p class="error" *ngIf="control.hasError('required')" translate>error.required</p>
+    <p class="error" *ngIf="control.hasError('custom')">{{ control.getError('custom') }}</p>
+  </div>
+</div>

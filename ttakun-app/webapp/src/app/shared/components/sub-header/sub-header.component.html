@@ -1,0 +1,11 @@
+<div class="subheader" [ngClass]="class">
+  <div class="subheader__left">
+    <a *ngIf="backLink" [routerLink]="backLink" queryParamsHandling="preserve" class="back" translate>shared.subHeader.back</a><h1>{{ title }}</h1>
+    <ng-content select=".subheader--left"></ng-content>
+  </div>
+  <div class="subheader__right">
+    <a *ngIf="actionLink" [routerLink]="actionLink" queryParamsHandling="preserve" class="button button-primary button-small">{{ actionLabel | translate }}</a>
+    <a *ngIf="actionClick" (click)="actionOutput.emit($event)" class="button button-primary button-small">{{ actionLabel | translate }}</a>
+    <ng-content select=".subheader--right"></ng-content>
+  </div>
+</div>

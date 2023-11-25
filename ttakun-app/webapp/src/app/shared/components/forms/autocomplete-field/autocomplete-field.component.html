@@ -1,0 +1,37 @@
+<div
+  [class]="class"
+  [formGroup]="form"
+  *ngIf="form.get(controlName) as control"
+  [class.error]="control.touched && control.errors"
+  [class.field--required]="hasRequiredField(control)"
+>
+  <label *ngIf="!hideLabel" [for]="id" >
+    {{ key | translate }}
+    <span class="required" *ngIf="hasRequiredField(control)"></span>
+  </label>
+  <ng-select
+    [id]="id"
+    [items]="options"
+    [bindValue]="'value'"
+    [bindLabel]="'label'"
+    [formControlName]="controlName"
+    [clearable]="allowClear"
+    [typeahead]="search "
+    [searchable]="searchable"
+    [notFoundText]="notFoundText | translate"
+    [placeholder]="placeholder | translate"
+    [addTag]="addTag"
+    [addTagText]="addTagText | translate"
+    (change)="changeEvent.emit($event)"
+    (clear)="clear.emit()"
+  ></ng-select>
+  <div class="box-error" *ngIf="!hideErrors && control.touched">
+    <p class="error" *ngIf="control.hasError('required')" translate>error.required</p>
+    <p class="error" *ngIf="control.hasError('email')" translate>error.email</p>
+    <p class="error" *ngIf="control.hasError('maxlength')" translate>error.maxlength</p>
+    <p class="error" *ngIf="control.hasError('minlength')" translate>error.minlength</p>
+    <p class="error" *ngIf="control.hasError('pattern')" translate>error.pattern</p>
+    <p class="error" *ngIf="control.hasError('match')" translate>error.password_mismatch</p>
+    <p class="error" *ngIf="control.hasError('custom')">{{ error.getError('custom') }}</p>
+  </div>
+</div>

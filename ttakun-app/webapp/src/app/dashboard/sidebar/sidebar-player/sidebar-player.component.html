@@ -1,0 +1,24 @@
+<div class="sidebar__body__song">
+  <p class="sidebar__body__song--title" translate>sidebar.player.musicSheet</p>
+  <p class="sidebar__body__song--name">{{getCurrentPentagramTitle()}}</p>
+</div>
+<div class="sidebar__body__player">
+  <div *ngIf="playing" (click)="onPausePress()" class="icon--pause"></div>
+  <div *ngIf="!playing" (click)="onPlayPress()" class="icon--play"></div>
+  <div (click)="onStopPress()" class="icon--stop"></div>
+  <div class="icon--reset" [class.text-secondary]="activeLoop" (click)="toggleActiveLoop()"></div>
+</div>
+<div class="sidebar__body__info">
+  <input
+    #playerStatusRange
+    type="range"
+    id="player-status-range"
+    min="0"
+    [max]="currentPentagram?.config?.duration"
+    [value]="currentSongPointSpeed"
+    (change)="changeCurrentSongPoint(playerStatusRange.value)"
+  >
+</div>
+<app-sidebar-player-observations
+  [ngClass]="'text'"
+></app-sidebar-player-observations>

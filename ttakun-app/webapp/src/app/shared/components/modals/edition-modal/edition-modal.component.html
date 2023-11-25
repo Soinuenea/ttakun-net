@@ -1,0 +1,21 @@
+<ngx-smart-modal
+  #modal
+  identifier="modal"
+  [closable]="false"
+  [escapable]="escapable"
+  [customClass]="modalClass"
+  (onDismiss)="onCancel()"
+>
+  <div class="modal-header">
+    <h4 *ngIf="title">{{ title | translate: titleParams }}</h4>
+    <a (click)="onCancel()" class="close"></a>
+  </div>
+  <div class="modal-body">
+    <ng-content></ng-content>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="button button-border" (click)="onCancel()" [innerHTML]="cancelLabel | translate"></button>
+    <button type="button" class="button button-secondary" (click)="onSave()" [disabled]="saveDisabled" [innerHTML]="saveLabel | translate"></button>
+  </div>
+</ngx-smart-modal>
+

@@ -1,0 +1,36 @@
+<form [formGroup]="form">
+  <div class="row">
+    <div class="column-1">
+      <app-select-field
+        [id]="'level'"
+        [controlName]="'level'"
+        [key]="'dashboard.footer.load.modal.level'"
+        [form]="form"
+        [options]="levelOptions"
+        [class]="'field'"
+      ></app-select-field>
+    </div>
+    <div class="column-1">
+      <app-select-field
+        [id]="'rhythm'"
+        [controlName]="'rhythm'"
+        [key]="'dashboard.footer.load.modal.rhythm'"
+        [form]="form"
+        [options]="rhythmOptions"
+        [class]="'field'"
+      ></app-select-field>
+    </div>
+    <div class="column-1">
+      <label [for]="'name'">
+        <span class="required"></span>
+      </label>
+      <app-input-text-field
+        [form]="form"
+        [id]="'name'"
+        [controlName]="'name'"
+        [key]="'dashboard.footer.save.modal.name'"
+        [class]="'field'"
+      ></app-input-text-field>
+    </div>
+  </div>
+</form>

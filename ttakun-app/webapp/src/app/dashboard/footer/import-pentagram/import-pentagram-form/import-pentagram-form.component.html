@@ -1,0 +1,15 @@
+<form [formGroup]="form">
+  <div class="row">
+    <div class="column-1">
+      <label for="">{{'dashboard.footer.load.modal.pentagram' | translate}}</label>
+      <app-file-field
+        [form]="form"
+        [id]="'pentagram'"
+        [controlName]="'pentagram'"
+        [accept]="['.json']"
+        [class]="'field'"
+        (fileChanged) = "onFileChanged($event)"
+      ></app-file-field>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,15 @@
+<section id="page-settings">
+  <article class="box">
+    <h3 class="box__title box__title--center" translate>dashboard.settings.title</h3>
+    <div class="fields">
+      <app-settings-theme-form
+        [theme]="currentTheme"
+        (themeChanged)="onThemeChanged($event)"
+      ></app-settings-theme-form>
+      <app-settings-password-form
+        [errors]="passwordErrors"
+        (save)="onPasswordChange($event)"
+      ></app-settings-password-form>
+    </div>
+  </article>
+</section>

@@ -1,0 +1,18 @@
+<form [formGroup]="form">
+  <div class="row">
+    <div class="column-1">
+      <label [for]="color">
+        {{ 'sidebar.musicians.add.form.color' | translate }}
+        <span class="required"></span>
+      </label>
+      <input
+          [(colorPicker)]="color"
+          [style.background]="color"
+          (colorPickerChange)="onChangeColor($event)"
+          type="text"
+          class="form-control"
+          id="musician-color-id"
+        />
+    </div>
+  </div>
+</form>
