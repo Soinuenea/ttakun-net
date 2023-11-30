@@ -1,8 +1,0 @@
-<span *ngIf="column.iconColumn; else textColumn" [ngClass]="column.iconColumn(element)"></span>
-<ng-template #textColumn>
-  <img *ngIf="column.imageUrl" src="{{column.imageUrl(element)}}" alt="">
-  <span *ngIf="column.transformation; else rawColumn" [innerHTML]="column.transformation(element)"></span>
-  <ng-template #rawColumn>
-    <span *ngIf="column.viewValue">{{ value }}</span>
-  </ng-template>
-</ng-template>
