@@ -1,3 +1,8 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
 
-ttakun-api/.docker/._docker-compose.yml
+#TTAKUN
 ttakun-api/.docker/docker-compose.yml
