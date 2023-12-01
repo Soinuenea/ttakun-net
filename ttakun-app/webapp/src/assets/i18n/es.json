@@ -1,0 +1,340 @@
+{
+  "sidebar": {
+    "add": "añadir",
+    "musicians": {
+      "title": "Músicos",
+      "add": {
+        "title": "Añadir un músico",
+        "save": "Añadir",
+        "form": {
+          "color": "Color"
+        }
+      },
+      "musician": "{{value}} Txalapartaria"
+    },
+    "planks": {
+      "title": "Tablones",
+      "add": {
+        "title": "Añadir un tablón",
+        "save": "Añadir",
+        "form": {
+          "type": "Tipo",
+          "note": "Nota",
+          "color": "Color"
+        }
+      },
+      "plank": "Tablon {{value}}"
+    },
+    "player": {
+      "musicSheet": "Partitura:",
+      "newMusicSheet": "Nueva partitura"
+    },
+    "emptyObservations": "Sin descripción",
+    "footer": {
+      "settings": {
+        "title": "Ajustes",
+        "showMore": "Mostrar más",
+        "showLess": "Mostrar menos",
+        "rhythmicalWeight": "Gramaje",
+        "fixToGrill": "Ajustar notas",
+        "beatsPerCompass": "Golpes por compás",
+        "hitStrength": "Fuerza del golpe",
+        "startOfPlayback": "Inicio de la reproducción",
+        "duration": "Duración",
+        "speed": "Velocidad de reproducción",
+        "skill": "Habilidad"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "button": "INICIAR SESIÓN",
+      "description": "Para iniciar sesión introduce tu email y tu contraseña",
+      "email": "Email",
+      "error": "Email o contraseña inválidas",
+      "password": "Contraseña",
+      "recoverPassword": "¿Has olvidado tu contraseña?",
+      "title": "Iniciar sesión",
+      "info": "Completa el formulario para iniciar la sesión",
+      "subtitle": "Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed",
+      "clickHere": "Clica aquí",
+      "noAccount": "¿No tienes cuenta?",
+      "repeatPassword": "Repite contraseña"
+    },
+    "register": {
+      "button": "CREAR CUENTA",
+      "description": "Para iniciar sesión introduce tu email y tu contraseña",
+      "email": "Email",
+      "error": "Email o contraseña inválidas",
+      "password": "Contraseña",
+      "recoverPassword": "¿Has olvidado tu contraseña?",
+      "title": "Registro",
+      "info": "Completa el formulario para registrarte",
+      "subtitle": "Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed",
+      "clickHere": "Clica aquí",
+      "noAccount": "¿No tienes cuenta?",
+      "repeatPassword": "Repite contraseña",
+      "gotAccount": "¿Tienes cuenta?",
+      "success": "Cuenta generada correctamente"
+    },
+    "recoverPassword": {
+      "button": "RECUPERAR CONTRASEÑA",
+      "email": "Email",
+      "error": "No se ha encontrado el email",
+      "login": "Si no quieres recuperar la contraseña puedes <a>iniciar sesión</a>.",
+      "subtitle": "Escribe el email con el que te registraste y recibirás las instrucciones para recuperar tu contraseña",
+      "success": "Se ha enviado un correo a tu email para recuperar la contraseña",
+      "title": "Recuperar contraseña"
+    },
+    "resetPassword": {
+      "button": "RECUPERAR CONTRASEÑA",
+      "invalidHash": "El enlace para restablecer la contraseña no es válido.",
+      "login": "Si no quieres recuperar la contraseña puedes <a>iniciar sesión</a>.",
+      "password": "Nueva contraseña",
+      "repeatPassword": "Repetir contraseña",
+      "resign": "Puedes volver a solicitar recuperar la contraseña clicando <a>aquí</a>.",
+      "submit": "Restablecer contraseña",
+      "subtitle": "Rellena los campos de usuario y contraseña para acceder a la aplicación",
+      "success": "Tu contraseña se ha modificado, ya puedes utilizarla para acceder al panel.",
+      "successLink": "Puedes acceder a la <a>aplicación<a> utilizando tu nueva contraseña.",
+      "title": "Cambiar contraseña",
+      "error": "No ha sido posible cambiar la contraseña. Intentelo de nuevo más tarde.",
+      "back": "Volver"
+    }
+  },
+  "dashboard": {
+    "settings": {
+      "security": {
+        "cancel": "Cancelar",
+        "password": "Contraseña",
+        "passwordRepeat": "Recordar contraseña",
+        "save": "Guardar",
+        "success": "Contraseña actualizada"
+      },
+      "theme": {
+        "dark": "Oscuro",
+        "light": "Claro",
+        "title": "1.- Aspecto"
+      },
+      "title": "Ajustes"
+    },
+    "sidebar": {
+      "actions": {
+        "collapse": "Colapsar",
+        "logout": "Cerrar sesión",
+        "settings": "Ajustes"
+      },
+      "title": "Menú"
+    },
+    "footer": {
+      "save": {
+        "title": "Guardar",
+        "modal": {
+          "title": "Guardar partitura",
+          "save": "Guardar",
+          "name": "Nombre",
+          "error": {
+            "save": "Hubo un error al guardar la partitura",
+            "load": "Hubo un error al cargar la partitura"
+          },
+          "success": {
+            "save": "La partitura se ha guardado correctamente",
+            "load": "La partitura se ha cargado correctamente"
+          }
+        }
+      },
+      "load": {
+        "title": "Elegir partitura",
+        "modal": {
+          "error": {
+            "load": "Hubo un error al cargar la partitura"
+          },
+          "general": {
+            "label": "Tipo de partitura",
+            "general": "General",
+            "own": "Mis partituras"
+          },
+          "level": "Nivel",
+          "pentagram": "Partitura",
+          "rhythm" : "Ritmo",
+          "save": "Cargar",
+          "title": "Elegir partitura"
+        }
+      },
+      "import": {
+        "title": "Importar partitura",
+        "modal": {
+          "title": "Importar partitura",
+          "save": "Importar",
+          "general": {
+            "label": "Tipo de partitura",
+            "general": "General",
+            "own": "Mis partituras"
+          },
+          "level": "Nivel",
+          "pentagram": "Partitura",
+          "error": {
+            "load": "Hubo un error al cargar la partitura",
+            "read": "Hubo un error al leer el fichero de la partitura"
+          }
+        }
+      },
+      "new": {
+        "title": "Nueva partitura"
+      },
+      "download": {
+        "title": "Descargar partitura"
+      }
+    },
+    "exit": {
+      "title": "¡Atención!",
+      "message": "Se van a perder los datos no guardados. ¿Seguro que desea continuar?",
+      "confirm": "Continuar",
+      "cancel": "Cancelar"
+    }
+  },
+  "datePicker": {
+    "firstDayOfWeek": 1,
+    "formats": {
+      "dateA11yLabel": "LL",
+      "datePickerInput": "L",
+      "fullPickerInput": "L LT",
+      "monthYearA11yLabel": "MMMM YYYY",
+      "monthYearLabel": "MMM YYYY",
+      "parseInput": "L LT",
+      "timePickerInput": "LT"
+    },
+    "labels": {
+      "cancelBtnLabel": "Cerrar",
+      "downHourLabel": "Quitar una hora",
+      "downMinuteLabel": "Quitar un minuto",
+      "downSecondLabel": "Quitar un segundo ",
+      "nextMonthLabel": "Mes siguiente ",
+      "nextYearLabel": "Año siguiente",
+      "prevMonthLabel": "Mes anterior",
+      "prevYearLabel": "Año anterior",
+      "rangeFromLabel": "Desde",
+      "rangeToLabel": "Hasta",
+      "setBtnLabel": "Confirmar",
+      "switchToMonthViewLabel": "Cambiar a vista mensual",
+      "switchToYearViewLabel": "Cambiar a vista anual",
+      "upHourLabel": "Sumar una hora",
+      "upMinuteLabel": "Sumar un minuto",
+      "upSecondLabel": "Sumar un segundo"
+    }
+  },
+  "error": {
+    "date_max": "Fecha incorrecta",
+    "date_min": "Fecha incorrecta",
+    "email": "No es un email válido",
+    "invalid_dates": "Fechas no válidas",
+    "invalid_file": "El archivo no es válido",
+    "length_not_valid": "La longitud no es válida",
+    "less_than": "El valor debe ser mayor",
+    "max_value": "El máximo es {{value}}",
+    "maxlength": "Demasiado largo",
+    "max_value_exceeded": "Valor máximo excedido",
+    "mime_type": "El formato del archivo no es válido",
+    "min_value": "El mínimo es {{value}}",
+    "minlength": "Demasiado corto",
+    "not_valid": "El campo no es válido",
+    "password_mismatch": "Las contraseñas no coinciden",
+    "pattern": "Valor no aceptado",
+    "required": "Campo obligatorio",
+    "unrecognized_error": "Ocurrió un error",
+    "user_already_exists": "El usuario con ese ID ya existe",
+    "user_not_found": "El usuario no existe",
+    "pentagram_already_exists": "La partitura con ese nombre ya existe",
+    "pentagrams_not_found": "No se pudieron cargar las partituras",
+    "pentagram_not_found": "No se pudo cargar la partitura"
+
+  },
+  "notFound": {
+    "link": "Volver al inicio",
+    "message": "Lo sentimos, la página que buscas no existe",
+    "title": ""
+  },
+  "shared": {
+    "autocomplete": {
+      "addTag": "El elemento no existe. Crear",
+      "notFound": "No hay elementos"
+    },
+    "confirm": {
+      "cancel": "Cancelar",
+      "confirm": "Confirmar"
+    },
+    "edit": {
+      "cancel": "Cancelar",
+      "save": "Guardar"
+    },
+    "info": {
+      "accept": "Aceptar"
+    },
+    "pagination": {
+      "results": "{{count}} resultados"
+    },
+    "sortable": {
+      "tableEmpty": "Lo sentimos pero no hay resultados"
+    },
+    "subHeader": {
+      "add": "Nuevo",
+      "back": "Volver"
+    },
+    "filter": {
+      "totalResults": "Listado {{count}} resultados",
+      "remove": "Borrar todo"
+    }
+  },
+  "sound": {
+    "type": {
+      "harriak": "HARRIAK",
+      "ohol_handiak": "OHOL HANDIAK",
+      "ohola_txikiak": "OHOLA TXIKIAK",
+      "palanka_handiak_hagaz": "PALANKA HANDIAK HAGAZ",
+      "palanka_handiak_makilaz": "PALANKA HANDIAK MAKILAZ",
+      "palanka_txikiak_hagaz": "PALANKA TXIKIAK HAGAZ",
+      "palanka_makilaz": "PALANKA TXIKIAK MAKILAZ"
+    },
+    "abbreviation": {
+      "harriak": "H. {{note}}",
+      "ohol_handiak": "O.H. {{note}}",
+      "ohola_txikiak": "O.T. {{note}}",
+      "palanka_handiak_hagaz": "P.H.H. {{note}}",
+      "palanka_handiak_makilaz": "P.H.M. {{note}}",
+      "palanka_txikiak_hagaz": "P.T.H. {{note}}",
+      "palanka_makilaz": "P.T.M. {{note}}"
+    }
+  },
+  "levels": {
+    "default": "Sin definir",
+    "0": "Nivel 0",
+    "1": "Nivel 1",
+    "2": "Nivel 2",
+    "3": "Nivel 3",
+    "4": "Nivel 4"
+  },
+  "rhythm": {
+    "default": "Sin definir",
+    "1": "Ritmo 1",
+    "3": "Ritmo 3",
+    "4": "Ritmo 4",
+    "5": "Ritmo 5",
+    "6": "Ritmo 6",
+    "7": "Ritmo 7",
+    "8": "Ritmo 8",
+    "9": "Ritmo 9",
+    "10": "Ritmo 10",
+    "12": "Ritmo 12",
+    "24": "Ritmo 24",
+    "m": "Ritmo m",
+    "M": "Ritmo M",
+    "O": "Ritmo O",
+    "KM": "Ritmo KM"
+  },
+  "common": {
+    "languages": {
+      "basque": "eus",
+      "spanish": "es"
+    }
+  }
+}

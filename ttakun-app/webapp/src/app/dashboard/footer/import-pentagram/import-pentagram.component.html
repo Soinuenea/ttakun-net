@@ -1,0 +1,11 @@
+<app-edition-modal
+  [title]="'dashboard.footer.import.modal.title'"
+  [saveLabel]="'dashboard.footer.import.modal.save'"
+  (save)="save.emit($event)"
+>
+  <div class="main-content">
+    <app-import-pentagram-form
+    >
+    </app-import-pentagram-form>
+  </div>
+</app-edition-modal>

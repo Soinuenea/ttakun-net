@@ -1,0 +1,47 @@
+<table class="table" #table  *ngIf="elements?.length > 0">
+    <thead>
+      <tr>
+        <th
+          *ngFor="let column of columns"
+          appSortableColumn
+          [title]="column.title"
+          [icon]="column.icon"
+          [property]="column.property"
+          [type]="column.type"
+          [sortable]="column.sortable"
+          [defaultSorting]="column.defaultSorting"
+          [selected]="selectedOrder"
+          [style.width]="column.width"
+          [style.min-width]="column.minWidth"
+          (sort)="sort.emit($event)"
+        ></th>
+      </tr>
+    </thead>
+    <tbody class="scroll" perfectScrollbar>
+      <tr *ngFor="let element of (elements | sort: selectedOrder: disableSorting | paginate: pagination)" [ngClass]="getRowClass(element)">
+        <td
+          *ngFor="let column of columns"
+          [style.width]="column.width"
+          [style.min-width]="column.minWidth"
+          [ngClass]="column.applyStyleColumn(element)"
+          appTitle
+        >
+          <ng-container *ngIf="column.actions; else notActions">
+            <a *ngFor="let action of column.actions" [ngClass]="action.class" (click)="action.onClick(element)">{{ action.title }}</a>
+          </ng-container>
+          <ng-template #notActions>
+            <a *ngIf="column.linkable; else cell" (click)="column.clicked.emit(element)">
+              <app-sortable-cell [column]="column" [element]="element"></app-sortable-cell>
+            </a>
+            <ng-template #cell>
+              <app-sortable-cell [column]="column" [element]="element"></app-sortable-cell>
+            </ng-template>
+          </ng-template>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="table-empty" *ngIf="elements?.length === 0">
+    <span class="info"><p translate>shared.sortable.tableEmpty</p></span>
+  </div>
+  <app-pagination *ngIf="!hidePagination && elements?.length > 0" (pageChange)="pageChange.emit($event)"></app-pagination>

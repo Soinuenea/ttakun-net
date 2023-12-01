@@ -1,0 +1,17 @@
+<ng-container *ngIf="sortable">
+  <div [ngClass]="icon"></div>
+  <div class="th__content">
+    <app-sort-control
+      [attribute]="property"
+      [defaultSorting]="defaultSorting"
+      [selected]="selected"
+      [type]="type"
+      (sort)="sort.emit($event)"
+    ></app-sort-control>
+    <span class="th__content__title" appTitle>{{ title }}</span>
+  </div>
+</ng-container>
+<ng-container *ngIf="!sortable">
+  <div [ngClass]="icon"></div>
+  <div class="th__content"><span class="th__content__title" appTitle>{{ title }}</span></div>
+</ng-container>

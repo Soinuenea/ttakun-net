@@ -1,0 +1,46 @@
+<div [class]="class"
+     [formGroup]="form"
+     *ngIf="form.get(controlName) as control"
+     [class.error]="control.touched && control.errors"
+     [class.field--required]="hasRequiredField(control)"
+     [attr.data-icon]="dataIcon"
+>
+  <label *ngIf="!hideLabel" [for]="id">
+    {{ key | translate }}
+    <span class="required" *ngIf="hasRequiredField(control)"></span>
+  </label>
+  <input
+    *ngIf="isInteger; else notInteger"
+    [type]="type"
+    [id]="id"
+    [formControlName]="controlName"
+    [placeholder]="(key) ? (key | translate) : ''"
+    [minlength]="minlength"
+    [maxlength]="maxlength"
+    [min]="min"
+    [readonly]="readonly"
+    appIntegerInput>
+  <ng-template #notInteger>
+    <input
+      [type]="type"
+      [id]="id"
+      [formControlName]="controlName"
+      [placeholder]="(key) ? (key | translate) : ''"
+      [minlength]="minlength"
+      [maxlength]="maxlength"
+      [readonly]="readonly">
+  </ng-template>
+  <div class="box-error" *ngIf="!hideErrors && control.touched">
+    <p class="error" *ngIf="control.hasError('required')" translate>error.required</p>
+    <p class="error" *ngIf="control.hasError('email')" translate>error.email</p>
+    <p class="error" *ngIf="control.hasError('maxlength')" translate>error.maxlength</p>
+    <p class="error" *ngIf="control.hasError('minlength')" translate>error.minlength</p>
+    <p class="error" *ngIf="control.hasError('pattern')" translate>error.pattern</p>
+    <p class="error" *ngIf="control.hasError('match')" translate>error.password_mismatch</p>
+    <p class="error" *ngIf="control.hasError('max_value')" translate
+       [translateParams]="{ value: error.getError('max_value') }">error.max_value</p>
+    <p class="error" *ngIf="control.hasError('min_value')" translate
+       [translateParams]="{ value: error.getError('min_value') }">error.min_value</p>
+    <p class="error" *ngIf="control.hasError('custom')">{{ control.getError('custom') }}</p>
+  </div>
+</div>

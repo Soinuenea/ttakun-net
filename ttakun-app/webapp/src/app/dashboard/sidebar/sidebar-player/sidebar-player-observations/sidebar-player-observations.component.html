@@ -1,0 +1,21 @@
+<p *ngIf="!editMode" (click)="onOpenEdit()" class="text">
+  <em *ngIf="!currentPentagram?.observations">
+    {{ 'sidebar.emptyObservations' | translate }}
+  </em>
+  {{ currentPentagram?.observations }}
+</p>
+
+<form *ngIf="editMode" [formGroup]="form">
+  <div class="row">
+    <div class="column-1">
+      <app-textarea-field
+        #observations
+        [id]="'observations'"
+        [controlName]="'observations'"
+        [form]="form"
+        [class]="'text'"
+        (keydown.enter)="onCloseEdit()"
+      ></app-textarea-field>
+    </div>
+  </div>
+</form>

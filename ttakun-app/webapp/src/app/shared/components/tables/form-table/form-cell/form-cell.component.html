@@ -1,0 +1,54 @@
+<ng-container *ngIf="column.formProperty; else label">
+  <app-input-text-field
+    *ngIf="column.isText; else numberCheckSelect"
+    [id]="id"
+    [form]="element"
+    [controlName]="column.formProperty"
+    [hideErrors]="column.hideErrors"
+  ></app-input-text-field>
+  <ng-template #numberCheckSelect>
+    <app-input-number-field
+      *ngIf="column.isNumber; else integerCheckSelect"
+      [id]="id"
+      [form]="element"
+      [controlName]="column.formProperty"
+      [hideErrors]="column.hideErrors"
+    ></app-input-number-field>
+    <ng-template #integerCheckSelect>
+      <app-input-integer-field
+        *ngIf="column.isInteger; else checkSelect"
+        [id]="id"
+        [form]="element"
+        [controlName]="column.formProperty"
+        [hideErrors]="column.hideErrors"
+      ></app-input-integer-field>
+      <ng-template #checkSelect>
+        <app-checkbox-field
+          *ngIf="column.isCheckbox; else select"
+          [id]="id"
+          [form]="element"
+          [controlName]="column.formProperty"
+          [hideErrors]="column.hideErrors"
+        ></app-checkbox-field>
+        <ng-template #select>
+          <app-select-field
+            [id]="id"
+            [form]="element"
+            [controlName]="column.formProperty"
+            [options]="column.options"
+            [hideErrors]="column.hideErrors"
+          ></app-select-field>
+        </ng-template>
+      </ng-template>
+    </ng-template>
+  </ng-template>
+</ng-container>
+<ng-template #label>
+  <span *ngIf="column.iconColumn; else textColumn" [ngClass]="column.iconColumn(element)"></span>
+  <ng-template #textColumn>
+    <span *ngIf="column.transformation; else rawColumn">{{ column.transformation(element) }}</span>
+    <ng-template #rawColumn>
+      <span>{{ value }}</span>
+    </ng-template>
+  </ng-template>
+</ng-template>

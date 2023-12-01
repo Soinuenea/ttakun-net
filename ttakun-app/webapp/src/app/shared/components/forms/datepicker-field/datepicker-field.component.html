@@ -1,0 +1,35 @@
+<div
+  *ngIf="form.get(controlName) as control"
+  [formGroup]="form"
+  [ngClass]="class"
+  [class.field--calendar]="!hideIcon"
+  [class.field--required]="hasRequiredField(control)"
+  [class.error]="control.touched && control.errors"
+>
+  <label [for]="id">
+    {{ key | translate }}
+    <span class="required" *ngIf="hasRequiredField(control)"></span>
+  </label>
+  <input
+    [id]="id"
+    [formControlName]="controlName"
+    [owlDateTimeTrigger]="datepicker"
+    [owlDateTime]="datepicker"
+    [min]="min"
+    [max]="max"
+    [selectMode]="selectMode"
+  >
+  <owl-date-time [pickerType]="type" [firstDayOfWeek]="'datePicker.firstDayOfWeek' | translate" #datepicker></owl-date-time>
+  <div class="box-error" *ngIf="!hideErrors && control.touched">
+    <p class="error" *ngIf="control.hasError('required')" translate>error.required</p>
+    <p class="error" *ngIf="control.hasError('email')" translate>error.email</p>
+    <p class="error" *ngIf="control.hasError('maxlength')" translate>error.maxlength</p>
+    <p class="error" *ngIf="control.hasError('minlength')" translate>error.minlength</p>
+    <p class="error" *ngIf="control.hasError('pattern')" translate>error.pattern</p>
+    <p class="error" *ngIf="control.hasError('match')" translate>error.password_mismatch</p>
+    <p class="error" *ngIf="control.hasError('owlDateTimeMin')" translate>error.date_min</p>
+    <p class="error" *ngIf="control.hasError('owlDateTimeMax')" translate>error.date_max</p>
+    <p class="error" *ngIf="control.hasError('lessThan')" translate>error.less_than</p>
+    <p class="error" *ngIf="control.hasError('custom')">{{ control.getError('custom') }}</p>
+  </div>
+</div>

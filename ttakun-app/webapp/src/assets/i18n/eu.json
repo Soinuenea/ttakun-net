@@ -1,0 +1,340 @@
+{
+  "sidebar": {
+    "add": "gehitu",
+    "musicians": {
+      "title": "Txalapartariak",
+      "add": {
+        "title": "Gehitu txalapartaria",
+        "save": "Gehitu",
+        "form": {
+          "color": "Kolorea"
+        }
+      },
+      "musician": "{{value}} Txalapartaria"
+    },
+    "planks": {
+      "title": "Oholak",
+      "add": {
+        "title": "Gehitu ohola",
+        "save": "Gehitu",
+        "form": {
+          "type": "Mota",
+          "note": "Nota",
+          "color": "Kolorea"
+        }
+      },
+      "plank": "{{value}} Ohola"
+    },
+    "player": {
+      "musicSheet": "Joaldia:",
+      "newMusicSheet": "Joaldi berria"
+    },
+    "emptyObservations": "Deskribapenik gabe",
+    "footer": {
+      "settings": {
+        "title": "Ezarpenak",
+        "showMore": "Erakutsi gehiago",
+        "showLess": "Erakutsi gutxiago",
+        "rhythmicalWeight": "Gramajea",
+        "fixToGrill": "Egokitu notak",
+        "beatsPerCompass": "Kolpeak bueltako",
+        "hitStrength": "Kolpearen indarra",
+        "startOfPlayback": "Nondik hasi",
+        "duration": "Iraupena",
+        "speed": "Erreprodukzio abiadura",
+        "skill": "Trebetasuna"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "button": "SAIOA HASI",
+      "description": "Saioa hasteko, sartu zure helbide elektronikoa eta pasahitza",
+      "email": "Email",
+      "error": "Emaila edo pasahitza baliogabeak",
+      "password": "Pasahitza",
+      "recoverPassword": "Zure pasahitza ahaztu duzu?",
+      "title": "Saioa hasi",
+      "info": "Bete formularioa saioa hasteko",
+      "subtitle": "Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed",
+      "clickHere": "Sakatu hemen",
+      "noAccount": "Ez duzu konturik?",
+      "repeatPassword": "Errepikatu pasahitza"
+    },
+    "register": {
+      "button": "KONTUA SORTU",
+      "description": "Saioa hasteko, sartu zure helbide elektronikoa eta pasahitza",
+      "email": "Email",
+      "error": "Emaila edo pasahitza baliogabeak",
+      "password": "Pasahitza",
+      "recoverPassword": "Zure pasahitza ahaztu duzu?",
+      "title": "Erregistroa",
+      "info": "Bete formularioa saioa erregistratzeko",
+      "subtitle": "Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed",
+      "clickHere": "Sakatu hemen",
+      "noAccount": "Ez duzu konturik?",
+      "repeatPassword": "Errepikatu pasahitza",
+      "gotAccount": "Ez duzu konturik?",
+      "success": "Kontua ondo sortu da"
+    },
+    "recoverPassword": {
+      "button": "PASAHITZA BERRESKURATU",
+      "email": "Email",
+      "error": "Ez da emaila aurkitu",
+      "login": "Pasahitza berreskuratu nahi ez baduzu, <a>saioa has dezakezu</a>.",
+      "subtitle": "Idatzi erregistratzeko erabili zenuen helbide elektronikoa eta zure pasahitza berreskuratzeko jarraibideak jasoko dituzu.",
+      "success": "Mezu bat bidali da zure helbide elektronikora pasahitza berreskuratzeko",
+      "title": "Pasahitza berreskuratu"
+    },
+    "resetPassword": {
+      "button": "PASAHITZA BERRESKURATU",
+      "invalidHash": "Pasahitza berrezartzeko loturak ez du balio.",
+      "login": "Pasahitza berreskuratu nahi ez baduzu, <a>saioa has dezakezu</a>.",
+      "password": "Pasahitz berria",
+      "repeatPassword": "Errepikatu pasahitza",
+      "resign": "Berriro eska dezakezu pasahitza berreskuratzeko, <a>hemen</a> klik eginda.",
+      "submit": "Pasahitza berrezarri",
+      "subtitle": "Bete erabiltzailea eta pasahitza aplikaziora sartzeko",
+      "success": "Zure pasahitza aldatu da, panelera sartzeko erabil dezakezu.",
+      "successLink": "<a>Aplikaziora<a> sar zaitezke zure pasahitz berria erabiliz.",
+      "title": "Pasahitza aldatu",
+      "error": "Ezin izan da pasahitza aldatu. Saiatu berriro geroago.",
+      "back": "Itzuli"
+    }
+  },
+  "dashboard": {
+    "settings": {
+      "security": {
+        "cancel": "Utzi",
+        "password": "Pasahitza",
+        "passwordRepeat": "Pasahitza gogoratu",
+        "save": "Gorde",
+        "success": "Pasahitz eguneratua"
+      },
+      "theme": {
+        "dark": "Iluna",
+        "light": "Argia",
+        "title": "1.- Itxura"
+      },
+      "title": "Ezarpenak"
+    },
+    "sidebar": {
+      "actions": {
+        "collapse": "Kolapsatu",
+        "logout": "Saioa itxi",
+        "settings": "Ezarpenak"
+      },
+      "title": "Menua"
+    },
+    "footer": {
+      "save": {
+        "title": "Gorde",
+        "modal": {
+          "title": "Joaldia gorde",
+          "save": "Gorde",
+          "name": "Izena",
+          "error": {
+            "save": "Arazo bat izan da joaldia gordetzean",
+            "load": "Arazo bat izan da joaldia kargatzean"
+          },
+          "success": {
+            "save": "Joaldia behar bezala gorde da",
+            "load": "Joaldia behar bezala kargatu da"
+          }
+        }
+      },
+      "load": {
+        "title": "Joaldia aukeratu",
+        "modal": {
+          "error": {
+            "load": "Arazo bat izan da joaldia kargatzean"
+          },
+          "general": {
+            "label": "Joaldi mota",
+            "general": "Orokorra",
+            "own": "Nire joaldiak"
+          },
+          "level": "Maila",
+          "pentagram": "Joaldia",
+          "rhythm" : "Erritmoa",
+          "save": "Kargatu",
+          "title": "Joaldia aukeratu"
+        }
+      },
+      "import": {
+        "title": "Inportatu joaldia",
+        "modal": {
+          "title": "Inportatu joaldia",
+          "save": "Inportatu",
+          "general": {
+            "label": "Partitura mota",
+            "general": "Orokorra",
+            "own": "Nire partiturak"
+          },
+          "level": "Maila",
+          "pentagram": "Partitura",
+          "error": {
+            "load": "Arazo bat gertatu de joaldia kargatzean",
+            "read": "Arazo bat gertatu de joaldiaren fitxategia irakurtzean"
+          }
+        }
+      },
+      "new": {
+        "title": "Joaldi berria"
+      },
+      "download": {
+        "title": "Deskargatu joaldia"
+      }
+    },
+    "exit": {
+      "title": "Kontuz!",
+      "message": "Gorde gabeko datuak galdu egingo dira. Ziur zaude jarraitu nahi duzula?",
+      "confirm": "Jarraitu",
+      "cancel": "Utzi"
+    }
+  },
+  "datePicker": {
+    "firstDayOfWeek": 1,
+    "formats": {
+      "dateA11yLabel": "LL",
+      "datePickerInput": "L",
+      "fullPickerInput": "L LT",
+      "monthYearA11yLabel": "MMMM YYYY",
+      "monthYearLabel": "MMM YYYY",
+      "parseInput": "L LT",
+      "timePickerInput": "LT"
+    },
+    "labels": {
+      "cancelBtnLabel": "Itxi",
+      "downHourLabel": "Ordu bat kendu",
+      "downMinuteLabel": "Minutu bat kendu",
+      "downSecondLabel": "Segundu bat kendu ",
+      "nextMonthLabel": "Hurrengo hilabetea",
+      "nextYearLabel": "Hurrengo urtea",
+      "prevMonthLabel": "Aurreko hilabetea",
+      "prevYearLabel": "Aurreko urtea",
+      "rangeFromLabel": "Geroztik",
+      "rangeToLabel": "Arte",
+      "setBtnLabel": "Konfirmatu",
+      "switchToMonthViewLabel": "Aldatu hileko ikuspegira",
+      "switchToYearViewLabel": "Aldatu urteko ikuspegira",
+      "upHourLabel": "Gehitu ordu bat",
+      "upMinuteLabel": "Gehitu minutu bat",
+      "upSecondLabel": "Gehitu segundu bat"
+    }
+  },
+  "error": {
+    "date_max": "Data okerra",
+    "date_min": "Data okerra",
+    "email": "Emailak ez du balio",
+    "invalid_dates": "Datek ez dute balio",
+    "invalid_file": "Fitxategiak ez du balio",
+    "length_not_valid": "Luzerak ez du balio",
+    "less_than": "Balioak handiagoa izan behar du",
+    "max_value": "Maximoa {{value}} da",
+    "maxlength": "Luzeegia da",
+    "max_value_exceeded": "Balio maximoa gainditua",
+    "mime_type": "Fitxategiaren formatuak ez du balio",
+    "min_value": "Minimoa {{value}} da",
+    "minlength": "Laburregia da",
+    "not_valid": "Eremuak ez du balio",
+    "password_mismatch": "Pasahitzak ez datoz bat",
+    "pattern": "Onartu gabeko balioa",
+    "required": "Nahitaezko eremua",
+    "unrecognized_error": "Arazo bat gertatu da",
+    "user_already_exists": "ID hori duen erabiltzailea existitzen da",
+    "user_not_found": "Erabiltzailea ez da existitzen",
+    "pentagram_already_exists": "Izen hori duen joaldia existitzen da",
+    "pentagrams_not_found": "Ezin izan dira joaldiak kargatu",
+    "pentagram_not_found": "Ezin izan da joaldia kargatu"
+
+  },
+  "notFound": {
+    "link": "Hasierara itzuli",
+    "message": "Sentitzen dugu, bilatzen duzun orrialdea ez da existitzen",
+    "title": ""
+  },
+  "shared": {
+    "autocomplete": {
+      "addTag": "Elementua ez da existitzen. Sortu",
+      "notFound": "Ez dago elementurik"
+    },
+    "confirm": {
+      "cancel": "Utzi",
+      "confirm": "Konfirmatu"
+    },
+    "edit": {
+      "cancel": "Utzi",
+      "save": "Gorde"
+    },
+    "info": {
+      "accept": "Onartu"
+    },
+    "pagination": {
+      "results": "{{count}} emaitz"
+    },
+    "sortable": {
+      "tableEmpty": "Sentitzen dugu, baina ez dago emaitzarik"
+    },
+    "subHeader": {
+      "add": "Berria",
+      "back": "Itzuli"
+    },
+    "filter": {
+      "totalResults": "{{count}} emaitzen zerrenda",
+      "remove": "Ezabatu guztia"
+    }
+  },
+  "sound": {
+    "type": {
+      "harriak": "HARRIAK",
+      "ohol_handiak": "OHOL HANDIAK",
+      "ohola_txikiak": "OHOL TXIKIAK",
+      "palanka_handiak_hagaz": "PALANKA HANDIAK HAGAZ",
+      "palanka_handiak_makilaz": "PALANKA HANDIAK MAKILAZ",
+      "palanka_txikiak_hagaz": "PALANKA TXIKIAK HAGAZ",
+      "palanka_makilaz": "PALANKA TXIKIAK MAKILAZ"
+    },
+    "abbreviation": {
+      "harriak": "H. {{note}}",
+      "ohol_handiak": "O.H. {{note}}",
+      "ohola_txikiak": "O.T. {{note}}",
+      "palanka_handiak_hagaz": "P.H.H. {{note}}",
+      "palanka_handiak_makilaz": "P.H.M. {{note}}",
+      "palanka_txikiak_hagaz": "P.T.H. {{note}}",
+      "palanka_makilaz": "P.T.M. {{note}}"
+    }
+  },
+  "levels": {
+    "default": "Definitu gabe",
+    "0": "0 maila",
+    "1": "1 maila",
+    "2": "2 maila",
+    "3": "3 maila",
+    "4": "4 maila"
+  },
+  "rhythm": {
+    "default": "Definitu gabe",
+    "1": "1 erritmoa",
+    "3": "3 erritmoa",
+    "4": "4 erritmoa",
+    "5": "5 erritmoa",
+    "6": "6 erritmoa",
+    "7": "7 erritmoa",
+    "8": "8 erritmoa",
+    "9": "9 erritmoa",
+    "10": "10 erritmoa",
+    "12": "12 erritmoa",
+    "24": "24 erritmoa",
+    "m": "m erritmoa",
+    "M": "M erritmoa",
+    "O": "O erritmoa",
+    "KM": "KM erritmoa"
+  },
+  "common": {
+    "languages": {
+      "basque": "eus",
+      "spanish": "es"
+    }
+  }
+}

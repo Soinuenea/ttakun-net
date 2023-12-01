@@ -1,0 +1,9 @@
+<app-confirm-modal
+  [title]="'dashboard.exit.title'"
+  [message]="'dashboard.exit.message'"
+  [confirmLabel]="'dashboard.exit.confirm'"
+  [cancelLabel]="'dashboard.exit.cancel'"
+  (confirm)="confirm.emit($event)"
+  (cancel)="cancel.emit($event)"
+>
+</app-confirm-modal>

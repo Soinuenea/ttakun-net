@@ -1,0 +1,22 @@
+<ngx-smart-modal
+  #modal
+  identifier="modal"
+  [closable]="false"
+  [customClass]="modalClass"
+  (onDismiss)="onAccept()"
+>
+  <div class="modal-header">
+    <h4 *ngIf="title">{{ title | translate: titleParams }}</h4>
+  </div>
+  <div class="modal-body">
+    <ng-content></ng-content>
+    <ng-container *ngIf="!content">
+      <p class="text-white" [innerHTML]="message | translate"></p>
+      <p class="text-white" *ngFor="let messageParam of messageParams" [translate]="messageParam"></p>
+    </ng-container>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="button" (click)="onAccept()" [innerHTML]="acceptLabel | translate"></button>
+  </div>
+</ngx-smart-modal>
+

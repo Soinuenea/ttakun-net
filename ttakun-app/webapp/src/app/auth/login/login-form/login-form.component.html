@@ -1,0 +1,35 @@
+<div class="form__content">
+  <h2 class="title" translate>auth.login.title</h2>
+  <p class="info" translate>auth.login.info</p>
+  <form [formGroup]="form" (submit)="onSubmit()">
+    <div class="fields">
+      <app-input-email-field
+        [id]="'email'"
+        [form]="form"
+        [controlName]="'email'"
+        [key]="'auth.login.email'"
+      ></app-input-email-field>
+      <app-input-password-field
+        [id]="'password'"
+        [form]="form"
+        [controlName]="'password'"
+        [key]="'auth.login.password'"
+      ></app-input-password-field>
+      <div class="fields__link">
+        <a [routerLink]="['/recover-password']" translate>auth.login.recoverPassword<span translate>auth.login.clickHere</span></a
+        >
+      </div>
+      <button
+        type="submit"
+        [disabled]="form.invalid"
+        class="button button-secondary"
+        translate
+      >
+        auth.login.button
+      </button>
+      <div class="fields__link">
+        <a [routerLink]="['/register']" translate>auth.login.noAccount<span translate>auth.login.clickHere</span></a>
+      </div>
+    </div>
+  </form>
+</div>
